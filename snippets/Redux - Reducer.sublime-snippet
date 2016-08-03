@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+import { handleActions } from 'redux-actions'
+
+import {
+
+} from '@constants/actionTypes'
+
+const initialState = {}
+
+const handlers = {}
+
+export default handleActions(handlers, initialState)
+
+]]></content>
+    <tabTrigger>rcc</tabTrigger>
+    <scope>source.js -(meta)</scope>
+    <description>Redux: reducer</description>
+</snippet>

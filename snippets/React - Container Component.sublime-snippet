@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+import { connect } from 'react-redux'
+
+import ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} from '@components/${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}}'
+
+const mapStateToProps = (state, props) => ({
+})
+
+const mapDispatchToProps = (dispatch) => ({
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}})
+
+]]></content>
+    <tabTrigger>rcc</tabTrigger>
+    <scope>source.js -(meta)</scope>
+    <description>React: container component</description>
+</snippet>
